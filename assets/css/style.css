@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+  --primary-color: rgb(22, 136, 145);
+  --primary-color-darker: rgb(8, 55, 58);
+  --soft-green: rgb(83, 204, 83);
+  --soft-red: rgb(250, 95, 95);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+h1, #slogan {
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('../img/giphy.gif');
+  background-size: cover;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  max-width: 500px;
+  margin: 250px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: inset;
+}
+
+form input, form label, form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form input {
+  height: 30px;
+  font-size: 18px;
+  padding: 0 10px;
+}
+
+form input:focus {
+  outline: 1px solid var(--primary-color);
+}
+
+form button {
+  margin-top: 30px;
+  border:none;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 18px;
+  height: 35px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: var(--primary-color-darker);
+}
+
+form button:active {
+  background: var(--soft-green);
+}
+
+.paragrafo-green, .paragrafo-red {
+  padding: 10px;
+  text-align: center;
+}
+
+.paragrafo-green {
+  background-color: var(--soft-green);
+}
+
+.paragrafo-red {
+  background-color: var(--soft-red);
+}
